@@ -164,6 +164,7 @@ Here is my <a href="https://scholar.google.com/citations?user=tQuRm1AAAAAJ&hl=en
 <ul>
   <li>
     <p>Presented a poster at IBM AI week 2019 held at Boston, MA</p>
+    <p><img src="Homepage/round.png"> Hi this is me.</p>
   </li>
 </ul>
 
