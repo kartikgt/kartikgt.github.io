@@ -1,24 +1,18 @@
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
-
 \documentclass[a4paper,12pt]{memoir} % Font and paper size
+\usepackage{hyperref} 
+\input{structure.tex}
 
-\input{structure.tex} % Include the file specifying document layout and packages
-
-%----------------------------------------------------------------------------------------
-%	NAME AND CONTACT INFORMATION 
-%----------------------------------------------------------------------------------------
-
-\userinformation{ % Set the content that goes into the sidebar of each page
+\userinformation{
 \begin{flushright}
-% Comment out this figure block if you don't want a photo
 \includegraphics[width=1.1\columnwidth]{photo.png}\\[\baselineskip] % Your photo
 \small % Smaller font size
-\Sep % Some whitespace
+\Sep
 \textbf{Website} \\
-\url{kartikgt.github.io} \\ % Your URL
-\Sep % Some whitespace
+\href{https://kartikgt.github.io/}{\texttt{kartikgt.github.io}}\\
+\Sep
+\textbf{Mail} \\
+\texttt{kartikgt23@gmail.com}\\
+\Sep
 \textbf{Contact} \\
 123, Society, \\ % Address 1
 Bangalore, Karnatka \\ % Address 2
@@ -26,23 +20,21 @@ Bangalore, Karnatka \\ % Address 2
 \end{flushright}
 }
 
-%----------------------------------------------------------------------------------------
-
 \begin{document}
 
-\userinformation % Print your information in the left column
+\userinformation
 
 \framebreak % End of the first column
 
-%----------------------------------------------------------------------------------------
-%	HEADING
-%----------------------------------------------------------------------------------------
-
-\cvheading{Kartik Gupta} % Large heading - your name
+\cvheading{Kartik Gupta}
 
 %\cvsubheading{Data Engineer} % Subheading - your occupation/specialization
+\CVSection{Education}
+\CVItem{2013 - 2018, \textit{Indian Institute of Technology Kharagpur}}{Integrated Dual Degree, Electronics and Electrical Engineering}
+\Sep
+
 \CVSection{Experience}
-\CVItem{Jun 2018 - present, \textit{Data Engineer - IT Consultant}, SAP}{
+\CVItem{Jun 2018 - present, \textit{Data Engineer - IT Consultant}, SAP Labs}{
 \begin{itemize}
 	\item Increased the BizX application uptime, reduced high latency jobs by 30%, and enhanced code
 efficiency by providing a data discovery platform Prism to the developers and customers for real time
@@ -50,12 +42,12 @@ analytics of S2 jobs, API traffic, and ElasticAPM metrics.
 
 	\item Built a data lake in Hadoop HDFS using Spark jobs to collect data from various sources like
 Splunk, Elasticsearch, and MySQL DB, analyzed the data for business insights using Apache Hive,
-and created dashboards in Kibana for visualizing the KPIs
+and created dashboards in Kibana for visualizing the KPIs.
 	\item Monitored the application and automated issue resolution by creating watchers and alerts which
-triggered troubleshooting python or shell scripts
+triggered troubleshooting python or shell scripts.
 	\item Managed the 25TB Hadoop cluster with 10 nodes and ensured efficient data processing of ~1
-billion transactions daily including business critical jobs and APIs traffic
-	\item Automated the ETL pipeline by using Jenkins and cronjobs, for reliable and real time insights
+billion transactions daily including business critical jobs and APIs traffic.
+	\item Automated the ETL pipeline by using Jenkins and cronjobs, for reliable and real time insights.
 \end{itemize}
 }
 
@@ -72,18 +64,11 @@ identifying lineages between data present in 50,000+ schemas.
 \CVItem{May 2016 - Jul 2016, \textit{Consulting Intern}, Miebach Consulting}{
 \begin{itemize}
 	\item Identified key Indian ports and industries for targeted introduction of cold storage, CFS and ICDs to
-support existing supply chain systems
+support existing supply chain systems.
 	\item Designed a pilot auto replenishment system for a retail client providing automated inventory
-replenishment and minimizing human errors
+replenishment and minimizing human errors.
 \end{itemize}
 }
-
-%------------------------------------------------
-
-\Sep % Extra whitespace after the end of a major section
-
-\CVSection{Education}
-\CVItem{2013 - 2018, Indian Institute of Technology Kharagpur}{Integrated Dual Degree, Electronics and Electrical Engineering}
 \Sep
 
 \CVSection{Skills}
@@ -94,38 +79,15 @@ replenishment and minimizing human errors
 
 \CVItem{Technical}
 {\bluebullet Led a team of 50+ to conceptualize, plan, and execute 100+ events over four days as the Events
-Head at Spring Fest, the nation's biggest college socio-cultural fest with a participation of 30,00+}
+Head at Spring Fest, the nation's biggest college socio-cultural fest with a participation of 30,00+.}
 
 \CVItem{Organizationsal}
-{
-\bluebullet Led a team of 50+ to conceptualize, plan, and execute 100+ events over four days as the Events
-Head at Spring Fest, the nation's biggest college socio-cultural fest with a participation of 30,00+}
+{\bluebullet Led a team of 50+ to conceptualize, plan, and execute 100+ events over four days as the Events
+Head at Spring Fest, the nation's biggest college socio-cultural fest with a participation of 30,00+.}
 
-
-%------------------------------------------------
-%
-%\CVItem{Organizational}
-%{\begin{tabular}{p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth}}
-% \bluebullet MySQL &  \bluebullet iOS & \bluebullet Android\\
-%\end{tabular}}
-
-%%------------------------------------------------
-%
 %\Sep % Extra whitespace after the end of a major section
-%
-%%----------------------------------------------------------------------------------------
-%%	NEW PAGE DELIMITER
-%%	Place this block wherever you would like the content of your CV to go onto the next page
-%%----------------------------------------------------------------------------------------
-%
 %\clearpage % Start a new page
-%
 %\userinformation % Print your information in the left column
-%
 %\framebreak % End of the first column
-
-\Sep % Extra whitespace after the end of a major section
-
-%----------------------------------------------------------------------------------------
-
+\Sep
 \end{document}
