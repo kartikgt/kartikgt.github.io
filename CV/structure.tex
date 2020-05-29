@@ -23,7 +23,7 @@
 \usepackage[utf8]{inputenc} % Required for inputting international characters
 \usepackage[T1]{fontenc} % Output font encoding for international characters
 
-\usepackage[top=1cm,left=1cm,right=1cm,bottom=1cm]{geometry} % Modify margins
+\usepackage[top=1cm,left=0.5cm,right=0.5cm,bottom=0.5cm]{geometry} % Modify margins
 
 \usepackage{graphicx} % Required for figures
 
@@ -47,7 +47,7 @@
 \addtolength{\LeftMainSep}{1\columnsep}
  
 % Small static frame for the vertical line
-\newstaticframe{1.5pt}{\textheight}{\LeftMainSep}{0pt}
+\newstaticframe{1.0pt}{\textheight}{\LeftMainSep}{0pt}
  
 % Content of the static frame with the vertical line
 \begin{staticcontents}{1}
@@ -57,7 +57,7 @@
 \end{staticcontents}
  
 % Define the right frame (main body)
-\addtolength{\LeftMainSep}{1.5pt}
+\addtolength{\LeftMainSep}{1.0pt}
 \addtolength{\LeftMainSep}{1\columnsep}
 \newflowframe{0.7\textwidth}{\textheight}{\LeftMainSep}{0pt}[main01]
 
