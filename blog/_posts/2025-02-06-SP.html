@@ -104,6 +104,7 @@
 .MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
 .MathJax_PHTML .noError {vertical-align:top ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
 </style>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     </head>
    
   <body><div id="MathJax_Message" style="display: none;"></div>
@@ -123,6 +124,7 @@
           <a class="page-link" href="CV/Kartik_Gupta.pdf">CV</a>
           <a class="page-link" href="experience.html">Experience</a>
           <a class="page-link" href="projects.html">Projects</a>
+          <a class="page-link" hef="blog.html">Back to blogs</a>
       </div>
     </nav>
   </div>
@@ -136,10 +138,21 @@
   <article class="post-content">
     <!-- ## About Me -->
 <p><img style="float: left; width: 200px; margin:0 30px 20px 0" src="Homepage/round.png"></p>
-<p>My Writings (In Progress...)  
-</p>
+<h1>My Writings (In Progress...)  
+</h1>
 
-<p><a class="page-link" href='blog/_posts/2025-02-06-SP.html'>Efficient spend on marketing channels</a></p>
+<div id="content1"></div>
+
+<script>
+  fetch("2025-02-06-SP.md")
+  .then(response => response.text())
+  .then(markdown => {
+    document.getElementById("content1").innerHTML = marked.parse(markdown);
+  })
+  .catch(error => console.error("Error loading text file: ", error));
+</script>
+
+
 
 <br>
 <br>
